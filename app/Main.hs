@@ -1,6 +1,5 @@
 module Main where
 import LSystem
-import Lib
 import Data.Aeson
 import Data.Maybe
 import System.IO
