@@ -67,7 +67,7 @@ enterSingleRule :: IO (Symbol, [Symbol])
 enterSingleRule = do
     putStr "\tEnter symbol > "
     symbol <- getLine
-    putStr "\tEnter rule for this symbol (e.g. (\"F-F+F\")) > "
+    putStr "\tEnter rule for this symbol (e.g. F-F+F) > "
     rule <- getLine
     return (head symbol, rule)
 
