@@ -6,12 +6,12 @@ cabal-version: 1.12
 
 name:           LSystem
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/LSystem#readme>
-homepage:       https://github.com/githubuser/LSystem#readme
-bug-reports:    https://github.com/githubuser/LSystem/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2022 Author name here
+description:    Please see the README on GitHub at <https://github.com/dewhitee/hs-lsystem#readme>
+homepage:       https://github.com/dewhitee/hs-lsystem#readme
+bug-reports:    https://github.com/dewhitee/hs-lsystem/issues
+author:         dewhitee
+maintainer:     dewhiteeofficial@gmail.com
+copyright:      2022 dewhitee
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/LSystem
+  location: https://github.com/dewhitee/hs-lsystem
 
 library
   exposed-modules:
@@ -33,8 +33,13 @@ library
       src
   build-depends:
       aeson
+    , aeson-yaml
     , base >=4.7 && <5
+    , bytestring
     , containers >=0.6.2.1 && <0.7
+    , directory
+    , split
+    , yaml
   default-language: Haskell2010
 
 executable LSystem-exe
@@ -47,8 +52,13 @@ executable LSystem-exe
   build-depends:
       LSystem
     , aeson
+    , aeson-yaml
     , base >=4.7 && <5
+    , bytestring
     , containers >=0.6.2.1 && <0.7
+    , directory
+    , split
+    , yaml
   default-language: Haskell2010
 
 test-suite LSystem-test
@@ -62,6 +72,11 @@ test-suite LSystem-test
   build-depends:
       LSystem
     , aeson
+    , aeson-yaml
     , base >=4.7 && <5
+    , bytestring
     , containers >=0.6.2.1 && <0.7
+    , directory
+    , split
+    , yaml
   default-language: Haskell2010
